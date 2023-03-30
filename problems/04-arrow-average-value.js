@@ -11,12 +11,21 @@ arrowAvgValue([100, 60, 64]); // => 74.66666666666667
 ***********************************************************************/
 
 const arrowAvgValue = array => {
-  // Your code here
+    let sum = 0
+    array.forEach(element => {
+        sum += element
+    });
+    console.log(sum / array.length)
 };
+
+
+arrowAvgValue([10, 20]); // => 15
+arrowAvgValue([2, 3, 7]); // => 4
+arrowAvgValue([100, 60, 64]); // => 74.66666666666667
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
-  module.exports = arrowAvgValue;
+    module.exports = arrowAvgValue;
 } catch (e) {
-  return null;
+    return null;
 }
